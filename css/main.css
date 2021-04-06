@@ -30,12 +30,12 @@ body {
 header h1 {
   font-size: 50px;
   padding: 30px;
-  color: #919150;
+  color: lightpink;
 }
 header footer p {
   font-size: 50px;
   padding: 30px;
-  color: #919150;
+  color: lightpink;
 }
 
 .warning, .error, .success {
