@@ -1,0 +1,60 @@
+@import "partials/variables";
+@import "partials/home";
+
+body{
+    font-size: 40px;
+    color: blue;
+}
+
+@mixin main-background{
+    font-size: 50px;
+    padding: 30px;
+    color:beige;
+}
+
+header{
+    h1{
+        @include main-background();
+    }
+
+footer{       
+     p{
+        @include main-background();
+        }
+    }
+}
+
+%msg-shared{
+    border: 2px solid black;
+    font-style: 30px;
+    font-style: italic;
+}
+
+// .success{
+//     @extend %msg-shared();
+//     color: green;   
+// }
+
+// .error{
+//     @extend %msg-shared();
+//     color: red;
+// }
+
+// .warning{
+//     @extend %msg-shared();
+//     color: orange;
+// }
+
+.success{
+    @extend %msg-shared;
+    color: green;
+}
+.error{
+    @extend %msg-shared;
+    color: red;
+}
+
+.warning{
+    @extend %msg-shared;
+    color: orange;
+}
